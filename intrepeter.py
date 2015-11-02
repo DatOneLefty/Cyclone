@@ -9,7 +9,10 @@ def init():
     num = 0
     command = 0
     cmd_data = 0
-def seperate():
+def run(command):
+    import interpreter as inter
+    inter.seperate
+def seperate(command):
     
     if num == " ":
         pass

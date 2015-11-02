@@ -10,4 +10,5 @@ import intrepeter as inter
 inter.init()
 while True:
     codeline = raw_input (">>>")
+    inter.run(codeline)
     
