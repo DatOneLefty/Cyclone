@@ -1,0 +1,3 @@
+display "hello!"
+var = 10
+display var
