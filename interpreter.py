@@ -11,17 +11,6 @@ def init():
     cmd_data = 0
     
 def run(command):
-    import interpreter as inter
     if command == "display [":
         import dispcmd
-        dispcmd.dispcmd(command)
-def seperate(command):
-    
-    if num == " ":
-        pass
-    else:
-        pass
-
-
-
-###################################
+        dispcmd.dispcmd()
