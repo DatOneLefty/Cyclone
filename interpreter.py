@@ -12,10 +12,16 @@ def init():
     
 def run(command):
     import interpreter as inter
-    inter.seperate
+    if command == "display [":
+        import dispcmd
+        dispcmd.dispcmd(command)
 def seperate(command):
     
     if num == " ":
         pass
     else:
         pass
+
+
+
+###################################
