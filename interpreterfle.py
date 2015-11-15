@@ -1,6 +1,13 @@
 sysp = 0
 savedc = 0
-var = raw_input ("RUN>")
+while True:
+    try:
+        var = raw_input ("RUN>")
+        open (var)
+    except:
+        print "Error: invalid file"
+    else:
+        break
 
 def dispcmd(lines):
     if lines == """]
@@ -40,6 +47,6 @@ with open(var) as openfileobject:
         if line == line:
             dispcmd(line)
 
-
+import interpreterfle
 
 
