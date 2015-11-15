@@ -7,10 +7,26 @@ def dispcmd(lines):
 """:
         sysp = "null"
     else:
-        if lines != """display [
-""":
+        if lines not in ('''display [
+''', ''']
+''', '''wait ['''):
             print lines[:-2]
             sysp = "txtp"
+def waitcmd(lines):
+    import time
+    if lines == """]
+""":
+        pass
+    if lines not in ('''wait [
+''', ''']
+'''):
+        try:
+            time.sleep(lines)
+        except:
+            print "TIME NOT VALID"
+        else:
+            pass
+        
 
         
 with open(var) as openfileobject:
@@ -18,6 +34,9 @@ with open(var) as openfileobject:
         if line == """display [
 """:
             dispcmd("")
+        if line == """wait [
+""":
+            waitcmd('')
         if line == line:
             dispcmd(line)
 
