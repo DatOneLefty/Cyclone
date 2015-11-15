@@ -9,7 +9,7 @@ def dispcmd(lines):
     else:
         if lines != """display [
 """:
-            print lines
+            print lines[:-2]
             sysp = "txtp"
 
         
