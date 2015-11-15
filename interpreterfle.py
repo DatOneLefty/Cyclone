@@ -1,23 +1,25 @@
-savedc = ""
-sysp = ""
+sysp = 0
+savedc = 0
 var = raw_input ("RUN>")
 
-def dispcmd(line):
-    if line == """]
+def dispcmd(lines):
+    if lines == """]
 """:
         print savedc
         sysp = "null"
     else:
-        savedc = line
+        savedc = lines
         sysp = "txtp"
 
         
 with open(var) as openfileobject:
     for line in openfileobject:
-        if sysp == "txtp":
-            dispcmd(line)
         if line == """display [
 """:
+            print "LINEF"
+            dispcmd("")
+        if line == line:
+            print "LINERP"
             dispcmd(line)
 
 
