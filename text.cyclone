@@ -1,9 +1,5 @@
 display [
-hello world!
-]
-wait [
-3
-]
-display [
-done!
+hello
+world
+hello
 ]

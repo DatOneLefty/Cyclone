@@ -10,7 +10,7 @@ def dispcmd(lines):
         if lines not in ('''display [
 ''', ''']
 ''', '''wait ['''):
-            print lines[:-2]
+            print lines[:-1]
             sysp = "txtp"
 def waitcmd(lines):
     import time
