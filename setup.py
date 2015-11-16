@@ -1,4 +1,4 @@
 from distutils.core import setup
 import py2exe
 
-setup(console=['Launcher.py'])
+setup(console=['interpreterfle.py'])
